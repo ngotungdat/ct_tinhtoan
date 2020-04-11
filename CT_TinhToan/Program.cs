@@ -11,33 +11,46 @@ namespace CT_TinhToan
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Console.Write("Nhập A: ");
-            int a = int.Parse(Console.ReadLine());
-            Console.Write("Nhập B: ");
-            int b = int.Parse(Console.ReadLine());
-            Console.Write("Công thức (+ - * /): ");
-            string tt = Console.ReadLine();
 
-            while (tt == " " && tt != "+" == true && tt != "-" == true && tt != "*" == true && tt != "/" == true)
+            string a, b;
+            char tt = ' ';
+            int A, B;
+
+            //Kiem tra nhap vao co phai la so
+            do
             {
-                Console.Write("Vui lòng nhập lại công thức! ");
-                tt = Console.ReadLine();
-            }
+                Console.Write("Nhập A: ");
+                a = Console.ReadLine();
+                Console.Write("Nhập B: ");
+                b = Console.ReadLine();       
+            } while (int.TryParse(a, out A) == false || int.TryParse(b, out B) == false);
+            
+            //Kiem tra cong thuc nhap vao dung/sai
+            do
+            {
+                if (tt == ' ')
+                {
+                    Console.Write("Cong thuc: ");
+                    tt = char.Parse(Console.ReadLine());
+                }
+                else
+                {
+                    Console.Write("Vui long nhap lai cong thuc: ");
+                    tt = char.Parse(Console.ReadLine());
+                }
+            } while ((tt != ' ') && (tt != '+') && (tt != '-') && (tt != '*') && (tt != '/'));
+
+            //Cac phep tinh/xuat ra ket qua
             switch (tt)
             {
-                case "+": Console.Write("Ket qua: " + (a + b));
+                case '+': Console.Write("Ket qua: " + (A + B));
                     break;
-                case "-": Console.Write("Ket qua: " + (a - b));
+                case '-': Console.Write("Ket qua: " + (A - B));
                     break;
-                case "*": Console.Write("Ket qua: " + (a * b));
+                case '*': Console.Write("Ket qua: " + (A * B));
                     break;
-
-                case "/": Console.Write("Ket qua: " + (a / b));
+                case '/': Console.Write("Ket qua: " + (A / B));
                     break;
-                default:
-                    Console.Write("Cong thuc nhap vao khong chinh xac!");
-                    break;
-                
             }
 
             Console.ReadKey();
