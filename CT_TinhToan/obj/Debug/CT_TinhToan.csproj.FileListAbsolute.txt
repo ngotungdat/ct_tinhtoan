@@ -4,3 +4,9 @@ E:\MVC\Net MVC\CT_TinhToan\CT_TinhToan\bin\Debug\CT_TinhToan.pdb
 E:\MVC\Net MVC\CT_TinhToan\CT_TinhToan\obj\Debug\CT_TinhToan.exe
 E:\MVC\Net MVC\CT_TinhToan\CT_TinhToan\obj\Debug\CT_TinhToan.pdb
 E:\MVC\Net MVC\CT_TinhToan\CT_TinhToan\obj\Debug\CT_TinhToan.csprojResolveAssemblyReference.cache
+E:\MVC\C#\ct_tinhtoan\CT_TinhToan\bin\Debug\CT_TinhToan.exe.config
+E:\MVC\C#\ct_tinhtoan\CT_TinhToan\obj\Debug\CT_TinhToan.exe
+E:\MVC\C#\ct_tinhtoan\CT_TinhToan\obj\Debug\CT_TinhToan.pdb
+E:\MVC\C#\ct_tinhtoan\CT_TinhToan\bin\Debug\CT_TinhToan.exe
+E:\MVC\C#\ct_tinhtoan\CT_TinhToan\bin\Debug\CT_TinhToan.pdb
+E:\MVC\C#\ct_tinhtoan\CT_TinhToan\obj\Debug\CT_TinhToan.csprojResolveAssemblyReference.cache
